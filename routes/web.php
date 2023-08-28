@@ -14,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Para acessar a página inicial é: /JOGOS
+
 Route::prefix('jogos')->group(function(){
     Route::get('/', [JogosController::class, 'index'])->name('jogos-index');
     Route::get('/create', [JogosController::class, 'create'])->name('jogos-create');
